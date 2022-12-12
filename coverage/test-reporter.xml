@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/home/niveus/NodeSonarExample/src/test/index.test.js">
+        <testCase name="Test the root path It should response the GET method" duration="32"/>
+    </file>
+</testExecutions>
