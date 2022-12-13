@@ -5,6 +5,7 @@ sonarqubeScanner(
         options : {
             'sonar.login': 'admin',
             'sonar.password': 'sonar',
+            'sonar.projectKey': 'network-node',
             'sonar.sources':  'src',
             'sonar.tests':  'src',
             'sonar.inclusions'  :  '**', // Entry point of your code
