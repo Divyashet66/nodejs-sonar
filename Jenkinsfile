@@ -53,7 +53,7 @@ pipeline {
                 sh 'sudo  apt-get update'
                 sh 'sudo apt-get install pack-cli'
 
-                sh 'pack build node -t gcr.io/tech-rnd-project/node --builder paketobuildpacks/builder:full'
+                sh 'pack build node -t gcr.io/tech-rnd-project/node-sonar --builder paketobuildpacks/builder:full'
             }
         }
 
@@ -62,7 +62,7 @@ pipeline {
                 script {
                     echo 'Push Docker Image'
                         sh 'gcloud auth configure-docker'
-                        sh 'sudo docker push gcr.io/tech-rnd-project/node'
+                        sh 'sudo docker push gcr.io/tech-rnd-project/node-sonar'
 
 			sh 'curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl'
 		        sh 'chmod +x kubectl'
