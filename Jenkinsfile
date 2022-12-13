@@ -34,6 +34,7 @@ pipeline {
               steps {
                   echo 'testing'
 		  sh "npm i"
+		  sh "npm i winston"
 		  sh "node src/index.js"
               }
       }
