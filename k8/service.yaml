@@ -8,4 +8,4 @@ spec:
       targetPort: 3000
   type: LoadBalancer
   selector:
-    app: java-app
+    app: node-app
