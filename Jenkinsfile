@@ -29,6 +29,13 @@ pipeline {
 		      sh "npm run test & sleep 3" 
               }
       }
+	    
+       stage('test') {
+              steps {
+                  echo 'testing'
+		  sh "node src/index.js"
+              }
+      }
       
        stage('SonarQube analysis') {
         	steps{
