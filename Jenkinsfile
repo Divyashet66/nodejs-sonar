@@ -33,6 +33,7 @@ pipeline {
        stage('test') {
               steps {
                   echo 'testing'
+		  sh "npm i"
 		  sh "node src/index.js"
               }
       }
