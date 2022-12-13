@@ -35,7 +35,7 @@ pipeline {
                   echo 'testing'
 		  sh "npm i"
 		  sh "npm i winston"
-		  sh "node src/index.js"
+		  sh "node src/index.js & sleep 3"
               }
       }
       
