@@ -1,6 +1,6 @@
 const express =  require('express');
 const app =  express();
-const logger = require('./utils/logger')
+const {logger} = require('./utils/logger')
 const port =  process.env.PORT  ||  3000
 // Route to be tested
 app.get('/', (req, res) => {
