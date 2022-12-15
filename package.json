@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sonar": "node sonar-project.js",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "start": "node src/index.js"
   },
   "jest": {
     "testEnvironment": "node",
@@ -25,7 +26,8 @@
   "dependencies": {
     "chai": "^4.3.7",
     "express": "^4.18.2",
-    "mocha": "^10.1.0"
+    "mocha": "^10.1.0",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
