@@ -51,7 +51,7 @@ pipeline {
                 sh 'sudo  apt-get update'
                 sh 'sudo apt-get install pack-cli'
 
-                sh 'pack build node -t gcr.io/tech-rnd-project/node-sonar --builder paketobuildpacks/builder:full'
+                sh 'pack build node-sonar -t gcr.io/tech-rnd-project/node-sonar --builder paketobuildpacks/builder:full'
             }
         }
 
