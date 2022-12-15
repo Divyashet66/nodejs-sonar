@@ -9,4 +9,3 @@ spec:
   type: LoadBalancer
   selector:
     app: node-app
-Footer
