@@ -4,7 +4,7 @@ const logger = require('./utils/logger')
 const port =  process.env.PORT  ||  3000
 // Route to be tested
 app.get('/', (req, res) => {
-    return res.status(200).json({ nome:  'Mohsin Khan' });
+    return res.status(200).json({ value: "Greetings from NodeJS"});
 });
 
 // Application running on the door
