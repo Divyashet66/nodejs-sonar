@@ -1,11 +1,11 @@
 const sonarqubeScanner =  require('sonarqube-scanner');
 sonarqubeScanner(
     {
-        serverUrl:  'http://34.93.209.167:9000',
+        serverUrl:  'http://35.207.255.130:9000',
         options : {
             'sonar.login': 'admin',
             'sonar.password': 'sonar',
-            'sonar.projectKey': 'network-node',
+            'sonar.projectKey': 'node',
             'sonar.sources':  'src',
             'sonar.tests':  'src',
             'sonar.inclusions'  :  '**', // Entry point of your code
