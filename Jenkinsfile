@@ -26,16 +26,17 @@ pipeline {
 		      sh "node --version"
 		      sh "npm i"
 		      sh "npm install jest --global"
-		      sh "npm run test & sleep 3" 
+		      
               }
       }
 	    
        stage('test') {
               steps {
                   echo 'testing'
-		  sh "npm i"
-		  sh "npm i winston"
-		  sh "node src/index.js & sleep 3"
+		  // sh "npm i"
+		  // sh "npm i winston"
+		  // sh "node src/index.js & sleep 3
+		      sh "npm run test & sleep 3" 
               }
       }
       
